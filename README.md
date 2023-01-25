@@ -8,7 +8,7 @@ Summary
 
 This project is broken down into three parts, in which you can find the links to below for full code and project. The rest of this readme will summarize key activities and findings from each section.
 
--   1\. Data Scraping
+-   [1\. Data Scraping](https://github.com/kevinkietle/NBA-Age-Decline-Project/blob/main/1.%20NBA%20Age%20Decline%20-%20Data%20Scraping.ipynb)
 
 -   2\. Data Cleaning
 
