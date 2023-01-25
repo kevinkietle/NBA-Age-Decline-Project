@@ -16,7 +16,7 @@ This project is broken down into three parts, in which you can find the links to
 
 ### Data Scraping
 
-In this section, I explored the NBA API, and specifically the careerplayerstats and playerprofilev2 endpoints. I looped through the player database on the NBA API to find players who had at least one season record in which they were at least 33 years old and this season had to occur no later than the 2012-2013 season. Then with this list of players, I retrieved yearly stats for each player using the careerplayerstats endpoint, career averages using the careerplayerstats endpoint, and yearly efficiency ranks for each player using the playerprofilev2 endpoint.
+In this section, I explored the NBA API, and specifically the careerplayerstats and playerprofilev2 endpoints. I looped through the player database on the NBA API to find players who had at least one season on record in which they were at least 33 years old and this season had to occur no earlier than the 2012-2013 season. Then with this list of players, I retrieved yearly stats for each player using the careerplayerstats endpoint, career averages using the careerplayerstats endpoint, and yearly efficiency ranks for each player using the playerprofilev2 endpoint.
 
 My rationale for these decisions were as follows:
 
