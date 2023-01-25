@@ -56,6 +56,20 @@ Insights
 --------
 ![drop off by rank](https://user-images.githubusercontent.com/82183590/214506197-94ae5bae-3031-4607-a938-587bf514a983.JPG)
 
+![drop off by points group](https://user-images.githubusercontent.com/82183590/214506598-02ecc48b-3348-4879-a089-f0db054a49d3.JPG)
+
+![drop off by age](https://user-images.githubusercontent.com/82183590/214506645-eae7607c-268c-45a1-b5d6-cd6510ef5477.JPG)
+
+![rebound paragraph](https://user-images.githubusercontent.com/82183590/214506698-13d229fb-1daf-415e-8bad-66c18e9d0dde.JPG)
+
+![rebounders drop](https://user-images.githubusercontent.com/82183590/214506745-0102aa4c-bb0e-4ee0-af23-e6002e45bebc.JPG)
+
+![big men start](https://user-images.githubusercontent.com/82183590/214506843-32c172aa-20d3-46af-ab69-db111481edc9.JPG)
+
+![coefficients explanation](https://user-images.githubusercontent.com/82183590/214506928-7619a37f-2daf-4000-aa9e-bc781ee454a2.JPG)
+
+![p-value explanation](https://user-images.githubusercontent.com/82183590/214506973-f0175f07-cfe3-4aff-9d7b-eb28dc45a9e9.JPG)
+
 Caveats
 -------
 
