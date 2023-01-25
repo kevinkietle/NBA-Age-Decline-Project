@@ -44,7 +44,7 @@ In this section, we created quick charts and graphs to visualize the relationshi
 
 Using the two dataframes discussed in the Data Cleaning section, here are the models we ran:
 
--   Multiple Linear regression: This proved to be the most successful model, with an R-score of 0.197. In finding features with low p-values, we discovered that the following features stood out as having true impact on the age of a player's drop off: career FG%, career games played, and position. You can see this a little more in the Insights.
+-   **Multiple Linear regression**: This proved to be the most successful model, with an R-score of 0.197. In finding features with low p-values, we discovered that the following features stood out as having true impact on the age of a player's drop off: career FG%, career games played, and position. You can see this a little more in the Insights.
 
 -   Logistic regression: This was used to try to predict what seasons would be a player's big drop off, using the classification_df dataframe. This did not work as intended as the model essentially predicted every season as False. If you recall, True means the player's biggest drop off was to precede that year. We have no use in a model that predicts False every time.
 
@@ -54,6 +54,7 @@ Using the two dataframes discussed in the Data Cleaning section, here are the mo
 
 Insights
 --------
+![drop off by rank](https://user-images.githubusercontent.com/82183590/214506197-94ae5bae-3031-4607-a938-587bf514a983.JPG)
 
 Caveats
 -------
