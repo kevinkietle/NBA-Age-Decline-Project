@@ -54,21 +54,31 @@ Using the two dataframes discussed in the Data Cleaning section, here are the mo
 
 Insights
 --------
-![drop off by rank](https://user-images.githubusercontent.com/82183590/214506197-94ae5bae-3031-4607-a938-587bf514a983.JPG)
+-   Looking again, it seems the amount a player drops off is pretty inconsistent with that player's rank. However, you see that towards the right of the plot the drop off is less. Intuitively, this makes sense: if a player is already towards the bottom of the NBA player ranks, they have less room to fall further. We do also see a bit of a cluster in the top left that may suggest the best players may experience a smaller drop off, a more gradual decline.
 
-![drop off by points group](https://user-images.githubusercontent.com/82183590/214506598-02ecc48b-3348-4879-a089-f0db054a49d3.JPG)
+Link
 
-![drop off by age](https://user-images.githubusercontent.com/82183590/214506645-eae7607c-268c-45a1-b5d6-cd6510ef5477.JPG)
+-   The box plots below show a similar pattern. Those who score the least and the most have less negative efficiency changes (drop off). Points is a key output stat that likely has high correlation with efficiency rank, so that makes sense.
 
-![rebound paragraph](https://user-images.githubusercontent.com/82183590/214506698-13d229fb-1daf-415e-8bad-66c18e9d0dde.JPG)
+Link
 
-![rebounders drop](https://user-images.githubusercontent.com/82183590/214506745-0102aa4c-bb0e-4ee0-af23-e6002e45bebc.JPG)
+-   The following boxplots show that with exception to the final quartile (ages 33-38), as players get older their major drop off tends to be sharper. This could make sense as players whose most significant drop comes earlier likely declined more gradually as opposed to all at once. Remember, for this data set I only included players who had a season on record in which they were over 33 years old. As a result, some players may have had that very significant drop at younger ages but they wouldn't be included here if they did not stay in the league until age 33.
 
-![big men start](https://user-images.githubusercontent.com/82183590/214506843-32c172aa-20d3-46af-ab69-db111481edc9.JPG)
+Link
 
-![coefficients explanation](https://user-images.githubusercontent.com/82183590/214506928-7619a37f-2daf-4000-aa9e-bc781ee454a2.JPG)
+-   Looking at all the features and their correlation to efficiency change, the most highly correlated is player age, which we explored. Games played is the next highest correlated, and this makes sense as it is highly related to player age. Interestingly, the rebounding stats at the bottom have the highest positive correlations to the drop off. As we know, big men are typically the ones getting more rebounds. Therefore, this could mean that big men see a less sharp drop (positive correlation means a smaller negative number). My guess is that as we have moved into a small ball era in the last decade, big men begin lower in ranks to begin with, meaning less room to drop
 
-![p-value explanation](https://user-images.githubusercontent.com/82183590/214506973-f0175f07-cfe3-4aff-9d7b-eb28dc45a9e9.JPG)
+-   Look showing the highest rebounders drop the least.
+
+Link
+
+-   This look below contradicts my guess that big men start lower in the ranks. In fact, they begin as better players (looking at C and PF). My new hypothesis is that a lot of big men did not make the 33 year old threshold of my data set as the league has gone more small ball. Another chart in this section shows that center is the position with the least data points in this data set. Therefore, the bigs that did make it were very above average players. This coupled with an earlier insight that better players drop off less, make sense.
+
+Link
+
+-   If this model were to be made into an equation, the coefficients of each feature are listed in section 3. FGM and FG% have large coefficient values, as well as FG3M and FG3%. This means the higher a scorer they were, the younger they drop off. This could make sense as role players who score less typically can see a more gradual decline. All the positions also have a negative coefficient with center being the baseline, which means their big drop off happens younger than centers, which supports the initial hypothesis that only very good big men made it to the data set and thus lasted longer.
+
+-   We ran p-values to see which features are significant, meaning we trust the coefficients (the effects) seen. We found that FG%, GP, and FT% are all statistically significant as well as some of the positional categories. As you can see, the PF position has low significance in terms of its difference to the center position, meaning our assumption of lumping them together in our big men hypotheses make sense.
 
 Caveats
 -------
