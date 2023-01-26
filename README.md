@@ -10,9 +10,9 @@ This project is broken down into three parts, in which you can find the links to
 
 -   [1\. Data Scraping](https://github.com/kevinkietle/NBA-Age-Decline-Project/blob/main/1.%20NBA%20Age%20Decline%20-%20Data%20Scraping.ipynb)
 
--   2\. Data Cleaning
+-   [2\. Data Cleaning](https://github.com/kevinkietle/NBA-Age-Decline-Project/blob/main/2.%20NBA%20Age%20Decline%20-%20Data%20Cleaning.ipynb)
 
--   3\. EDA and Modeling
+-   [3\. EDA and Modeling](https://github.com/kevinkietle/NBA-Age-Decline-Project/blob/main/3.%20NBA%20Age%20Decline%20-%20EDA%20and%20Modeling.ipynb)
 
 ### Data Scraping
 
