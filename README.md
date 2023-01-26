@@ -56,25 +56,25 @@ Insights
 --------
 -   Looking again, it seems the amount a player drops off is pretty inconsistent with that player's rank. However, you see that towards the right of the plot the drop off is less. Intuitively, this makes sense: if a player is already towards the bottom of the NBA player ranks, they have less room to fall further. We do also see a bit of a cluster in the top left that may suggest the best players may experience a smaller drop off, a more gradual decline.
 
-Link
+![screenshot 1](https://user-images.githubusercontent.com/82183590/214757093-f1a9046a-d3a8-4e26-8031-6c89d05795ab.JPG)
 
 -   The box plots below show a similar pattern. Those who score the least and the most have less negative efficiency changes (drop off). Points is a key output stat that likely has high correlation with efficiency rank, so that makes sense.
 
-Link
+![screenshot 2](https://user-images.githubusercontent.com/82183590/214757113-f4c6015e-f3b2-4ab3-a732-220bb2e3a25b.JPG)
 
 -   The following boxplots show that with exception to the final quartile (ages 33-38), as players get older their major drop off tends to be sharper. This could make sense as players whose most significant drop comes earlier likely declined more gradually as opposed to all at once. Remember, for this data set I only included players who had a season on record in which they were over 33 years old. As a result, some players may have had that very significant drop at younger ages but they wouldn't be included here if they did not stay in the league until age 33.
 
-Link
+![screenshot 3](https://user-images.githubusercontent.com/82183590/214757131-b524281e-c148-4780-811f-cd4690c5b4fb.JPG)
 
 -   Looking at all the features and their correlation to efficiency change, the most highly correlated is player age, which we explored. Games played is the next highest correlated, and this makes sense as it is highly related to player age. Interestingly, the rebounding stats at the bottom have the highest positive correlations to the drop off. As we know, big men are typically the ones getting more rebounds. Therefore, this could mean that big men see a less sharp drop (positive correlation means a smaller negative number). My guess is that as we have moved into a small ball era in the last decade, big men begin lower in ranks to begin with, meaning less room to drop
 
 -   Look showing the highest rebounders drop the least.
 
-Link
+![screenshot 4](https://user-images.githubusercontent.com/82183590/214757150-6c9ca2c9-34af-42eb-97f9-c42b9774cea1.JPG)
 
 -   This look below contradicts my guess that big men start lower in the ranks. In fact, they begin as better players (looking at C and PF). My new hypothesis is that a lot of big men did not make the 33 year old threshold of my data set as the league has gone more small ball. Another chart in this section shows that center is the position with the least data points in this data set. Therefore, the bigs that did make it were very above average players. This coupled with an earlier insight that better players drop off less, make sense.
 
-Link
+![screenshot 5](https://user-images.githubusercontent.com/82183590/214757174-4bc6557b-3003-4193-a579-77997c69663d.JPG)
 
 -   If this model were to be made into an equation, the coefficients of each feature are listed in section 3. FGM and FG% have large coefficient values, as well as FG3M and FG3%. This means the higher a scorer they were, the younger they drop off. This could make sense as role players who score less typically can see a more gradual decline. All the positions also have a negative coefficient with center being the baseline, which means their big drop off happens younger than centers, which supports the initial hypothesis that only very good big men made it to the data set and thus lasted longer.
 
