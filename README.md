@@ -3,7 +3,7 @@ NBA Age Decline Project
 
 In this project, I had the goal of researching NBA players' decline due to age. I wanted to find insights that could help predict when a player will "fall off a cliff". In this project, I performed my research using Python, Pandas, Matplotlib, Seaborn, Sci-kit learn, and the [NBA API](https://github.com/swar/nba_api) (which takes information from the NBA official stats website).
 
-Summary
+Abstract
 -------
 
 This project is broken down into three parts, in which you can find the links to below for full code and project. The rest of this readme will summarize key activities and findings from each section.
@@ -14,7 +14,18 @@ This project is broken down into three parts, in which you can find the links to
 
 -   [3\. EDA and Modeling](https://github.com/kevinkietle/NBA-Age-Decline-Project/blob/main/3.%20NBA%20Age%20Decline%20-%20EDA%20and%20Modeling.ipynb)
 
-### Data Scraping
+### Main Takeaways:
+
+-   The best NBA players show potentially a more gradual decline, meaning in the year of largest drop off, the drop off in efficiency rank is not as pronounced.
+
+-   The worst players also drop off less, probably because there is less room to drop off.
+
+-   Big men have their big drop off earlier, potentially before the age of 33, which is the cutoff set in this project. Elite big men, however, see their largest decline latest amongst all players.
+
+-   According to the linear regression model, higher scorers see their biggest drop at younger ages.
+
+Data Scraping
+-------
 
 In this section, I explored the NBA API, and specifically the careerplayerstats and playerprofilev2 endpoints. I looped through the player database on the NBA API to find players who had at least one season on record in which they were at least 33 years old and this season had to occur no earlier than the 2012-2013 season. Then with this list of players, I retrieved yearly stats for each player using the careerplayerstats endpoint, career averages using the careerplayerstats endpoint, and yearly efficiency ranks for each player using the playerprofilev2 endpoint.
 
@@ -26,7 +37,8 @@ My rationale for these decisions were as follows:
 
 -   I will discuss actions taken with the three dataframes resulted from the endpoints, player season averages, player career averages, and player season efficiency rank in the Data Cleaning section. Efficiency is what I will be using in this project as a catch all ranking of the NBA players. There are plenty of metrics that try to do this as well such as PIE, PER, LEBRON, RAPTOR, etc. Efficiency just happens to be most readily available through the API, but other preferred metrics would likely yield similar results.
 
-### Data Cleaning
+Data Cleaning
+-------
 
 The biggest action taken in this section was creating the EFF_CHANGE column within the dataframe for the player season ranks. If a player was the 20th ranked player in 2014 and was the 50th ranked player in 2015, a -30 would be inputted for 2014. This indicates that following 2014, a drop off of 30 spots was to occur. Assigning the drop to the previous year was an intentional decision to make this model more forward-looking and not retroactive.
 
@@ -38,7 +50,8 @@ After further cleaning, we end up with two dataframes:
 
 -   Regression_df: This contains every selected player, but each player only appears in one row. That row contains the age in the year preceding the drop off, career averages, and position. This dataframe will be used to run through regression models to see if we can predict the age in which a player drops off based on their position and career averages.
 
-### EDA and Modeling
+EDA and Modeling
+-------
 
 In this section, we created quick charts and graphs to visualize the relationship between various stats with EFF_CHANGE or rank. You can see a few that stand out in the Insights section below.
 
