@@ -1,10 +1,8 @@
 NBA Age Decline Project
 =======================
-
-In this project, I had the goal of researching NBA players' decline due to age. I wanted to find insights that could help predict when a player will "fall off a cliff". In this project, I performed my research using Python, Pandas, Matplotlib, Seaborn, Sci-kit learn, and the [NBA API](https://github.com/swar/nba_api) (which takes information from the NBA official stats website).
-
 Abstract
 -------
+In this project, I had the goal of researching NBA players' decline due to age. I wanted to find insights that could help predict when a player will "fall off a cliff". In this project, I performed my research using Python, Pandas, Matplotlib, Seaborn, Sci-kit learn, and the [NBA API](https://github.com/swar/nba_api) (which takes information from the NBA official stats website).
 
 This project is broken down into three parts, in which you can find the links to below for full code and project. The rest of this readme will summarize key activities and findings from each section.
 
